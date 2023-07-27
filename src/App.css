@@ -1,38 +1,62 @@
-.App {
+.container{
+  height: 100vh;
+  background-color: #61DAFB;
+}
+
+.App{
   text-align: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #3b3b3b;
+  color:#61DAFB;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App img {
+  margin: 10px auto;
+  animation: ani 10s infinite linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App button{
+  margin-top: 20px !important;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px #61DAFB solid;
+  color:#61DAFB;
+  background: #333;
+  font-size: 1.2rem;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App p{
+  color:#61DAFB;
+}
+
+.App span{
+  color: blue;
+}
+
+.product-contain{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 20px 10px;
+  padding: 5px 10px;
+}
+
+.footer{
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes ani {
+  0%   {transform: rotate(0deg);}
+  25%  {transform: rotate(90deg);}
+  50%  {transform: rotate(180deg);}
+  75%  {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
